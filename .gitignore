@@ -1,0 +1,50 @@
+# Build artifacts
+build/
+*.bin
+*.elf
+*.map
+
+# ESP-IDF
+sdkconfig.old
+sdkconfig.*.old
+.config
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.Python
+venv/
+env/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Managed components
+managed_components/
+
+# Personal configurations
+sdkconfig.personal
+
+# Documentation build
+docs/_build/
+docs/html/
+
+# Test artifacts
+test_results/
+coverage/

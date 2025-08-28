@@ -1,0 +1,28 @@
+idf_component_register(SRCS 
+    "main_simple.cpp"
+    "grid_board.cpp"
+    "ShareTech140.c"
+    "NotoEmoji64.c"
+    "sdio_communication.c"
+    "c6_uart_bridge.c"
+    "tab5_c6_integration.c"
+    "c6_sd_firmware_loader.c"
+    "c6_firmware_prepare.c"
+    "sd_card_helper.c"
+    "delete_backup.c"
+    INCLUDE_DIRS "."
+    PRIV_REQUIRES 
+        nvs_flash
+        esp_lvgl_port
+        lvgl
+        m5stack_tab5
+        driver
+        vfs
+        sdmmc
+        esp_driver_sdmmc
+        freertos
+        fatfs
+        spi_flash
+    EMBED_FILES 
+        "c6_firmware.bin"
+    )
