@@ -10,8 +10,10 @@ This project is a port of the original [Grid Board](https://github.com/0015/Grid
 - **Animated Messages**: Smooth text animations with customizable messages
 - **Emoji Support**: Full Unicode emoji rendering
 - **Landscape Orientation**: Optimized for horizontal viewing
-- **ESP32-C6 Integration**: Optional Wi-Fi module support via SDIO
 - **Customizable Messages**: Easy to modify display messages
+
+### ⚠️ Experimental Features (Not Working)
+- **ESP32-C6 Wi-Fi Integration**: The code includes support for ESP32-C6 wireless module via SDIO, but it's currently non-functional due to firmware and controller issues. This feature is under development.
 
 ## Hardware Requirements
 
@@ -20,7 +22,7 @@ This project is a port of the original [Grid Board](https://github.com/0015/Grid
   - 5" IPS TFT Display (1280×720) via MIPI-DSI
   - GT911 multi-touch controller
   - 16MB Flash + 32MB PSRAM
-  - ESP32-C6 wireless module (optional)
+  - ESP32-C6 wireless module (present but not supported in this version)
 
 ## Software Requirements
 
@@ -127,17 +129,18 @@ grid-board-tab5/
 - **Animation Speed**: Configurable delay between characters
 - **Cycle Time**: 30-second intervals between messages
 
-## Advanced Features
+## Known Limitations
 
-### ESP32-C6 Wi-Fi Module
-The project includes support for the ESP32-C6 wireless module:
+### ESP32-C6 Wi-Fi Module (Not Working)
+⚠️ **Note**: The ESP32-C6 wireless integration is currently non-functional. The code infrastructure is present but:
+- SDIO communication with C6 module fails to initialize properly
+- Firmware flashing for C6 is problematic
+- The feature is left in the codebase for future development
 
-```cpp
-// Initialize C6 communication
-esp_err_t ret = tab5_c6_system_init(false);
-if (ret == ESP_OK) {
-    ESP_LOGI(TAG, "C6 communication initialized");
-}
+If you see C6-related initialization errors in the logs, they can be safely ignored:
+```
+W (1179) GridBoard_Tab5: C6 communication initialization failed
+W (1180) GridBoard_Tab5: ESP32-C6 may not have SDIO slave firmware installed
 ```
 
 ### Touch Calibration
@@ -234,7 +237,7 @@ This project is a port/adaptation of Eric Nam's Grid Board to the M5Stack Tab5 p
   - Full touch grid implementation
   - Emoji support
   - Message cycling
-  - ESP32-C6 integration
+  - ESP32-C6 integration code (non-functional, experimental)
 
 ## Demo
 
