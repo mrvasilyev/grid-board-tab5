@@ -4,6 +4,8 @@ An interactive touch-enabled grid display application for the M5Stack Tab5 ESP32
 
 This project is a port of the original [Grid Board](https://github.com/0015/Grid_Board) by [Eric Nam (@0015)](https://github.com/0015) to the M5Stack Tab5 platform.
 
+![Grid Board Tab5 Demo](assets/Demo.png)
+
 ## Features
 
 - **Interactive Touch Grid**: 5x9 grid of touch-responsive cells
@@ -241,7 +243,15 @@ This project is a port/adaptation of Eric Nam's Grid Board to the M5Stack Tab5 p
 
 ## Demo
 
+![Grid Board Tab5 Demo](assets/Demo.png)
+
 The Grid Board displays animated messages on a 5x9 touch-responsive grid. Messages cycle every 30 seconds with smooth animations and full emoji support.
+
+### Video Demo
+[Watch Demo Video](assets/Demo.mov)
+
+### Device Photo
+![M5Stack Tab5](assets/Tab5.avif)
 
 ---
 
