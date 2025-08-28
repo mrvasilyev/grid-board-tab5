@@ -2,8 +2,6 @@
 
 An interactive touch-enabled grid display application for the M5Stack Tab5 ESP32-P4 development board. Features animated text messages with emoji support, creating an engaging visual experience on the 5-inch display.
 
-![Grid Board Tab5](docs/images/grid_board_demo.jpg)
-
 ## Features
 
 - **Interactive Touch Grid**: 5x9 grid of touch-responsive cells
@@ -232,9 +230,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   - Message cycling
   - ESP32-C6 integration
 
-## Demo Video
+## Demo
 
-[Watch Demo Video](https://youtube.com/watch?v=demo_link)
+The Grid Board displays animated messages on a 5x9 touch-responsive grid. Messages cycle every 30 seconds with smooth animations and full emoji support.
 
 ---
 
