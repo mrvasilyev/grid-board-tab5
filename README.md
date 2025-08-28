@@ -248,7 +248,7 @@ This project is a port/adaptation of Eric Nam's Grid Board to the M5Stack Tab5 p
 The Grid Board displays animated messages on a 5x9 touch-responsive grid. Messages cycle every 30 seconds with smooth animations and full emoji support.
 
 ### Video Demo
-[Watch Demo Video](assets/Demo.mov)
+![Demo Animation](assets/Demo.gif)
 
 ### Device Photo
 ![M5Stack Tab5](assets/Tab5.avif)
