@@ -2,6 +2,8 @@
 
 An interactive touch-enabled grid display application for the M5Stack Tab5 ESP32-P4 development board. Features animated text messages with emoji support, creating an engaging visual experience on the 5-inch display.
 
+This project is a port of the original [Grid Board](https://github.com/0015/Grid_Board) by [Eric Nam (@0015)](https://github.com/0015) to the M5Stack Tab5 platform.
+
 ## Features
 
 - **Interactive Touch Grid**: 5x9 grid of touch-responsive cells
@@ -208,18 +210,22 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## Credits & Acknowledgments
 
+- **Original Grid Board Project**: [Eric Nam (@0015)](https://github.com/0015) - Creator of the original [Grid Board](https://github.com/0015/Grid_Board) concept and implementation
 - **M5Stack** for the Tab5 hardware platform
 - **Espressif** for ESP-IDF framework
 - **LVGL** for the graphics library
 - **Community** for testing and feedback
 
+This project is a port/adaptation of Eric Nam's Grid Board to the M5Stack Tab5 platform, adding support for the ESP32-P4's MIPI-DSI display, GT911 touch controller, and ESP32-C6 wireless integration.
+
 ## Contact
 
-- **Author**: Alexander Vasilyev
+- **Port Author**: Alexander Vasilyev
 - **GitHub**: [@mrvasilyev](https://github.com/mrvasilyev)
-- **Project**: [Grid Board Tab5](https://github.com/yourusername/grid-board-tab5)
+- **This Port**: [Grid Board Tab5](https://github.com/mrvasilyev/grid-board-tab5)
+- **Original Project**: [Grid Board by @0015](https://github.com/0015/Grid_Board)
 
 ## Version History
 
