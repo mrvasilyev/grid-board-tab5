@@ -1,0 +1,12 @@
+menu "Tab5 Features"
+
+config TAB5_WIFI_REMOTE_ENABLE
+    bool "Enable Wi‑Fi Remote (ESP‑Hosted)"
+    default n
+    help
+      Enable initialization of Wi‑Fi/AP demo and any ESP‑Hosted transport.
+      Disable during bring‑up if the ESP32‑C6 slave is not flashed/wired,
+      or when running without Wi‑Fi Remote.
+
+endmenu
+
